@@ -1,0 +1,144 @@
+//Width carousel / Image
+menu{
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+    .navigation{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+        .li-one{
+            list-style-type: none;
+            padding: 15px 20px; 
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            .sneaker{
+                color: red;
+            }
+            .sub-menu{
+                    background-color: white;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    padding-left: 10%;
+                    transform: translateY(100px);
+                    opacity: 0; 
+                    visibility: hidden;
+                    margin-top: 10px;
+                    display: flex;
+                    z-index: 1;
+                    div{
+                        margin-right: 90px;
+                        margin-top: 36px;
+                        margin-bottom: 70px;
+                        span{
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            padding: 5px 0;
+                            li{
+                                list-style-type: none;
+                                width: 150px;
+                                i{
+                                    font-size: 12px;
+                                    margin-right: 5px;
+                                    color: gray;
+                                    display: none;
+                                }
+                                a{
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                    color: black;
+                                    width: 100%;
+                                }
+                                &:hover{
+                                    i{
+                                        display: inline;
+                                    }
+                                    
+                                    &:hover a{
+                                        border-bottom: 1px solid black;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                            .bold{
+                                font-size: 15px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+            }
+            &:hover{
+                >a{
+                border-bottom: 1px solid black;
+                }
+            }
+        }
+        //Menu Hover Effect...Below
+        .men{
+            &:hover .sub-menu{
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+                transition: 1s;
+            }
+        }
+        .women{
+            &:hover .women-sub-menu{
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+                transition: 1s;
+            }
+        }
+        .children{
+            &:hover .children-sub-menu{
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+                transition: 1s;
+            }
+        }
+        .accessories{
+            &:hover .accessories-sub-menu{
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+                transition: 1s;
+            }
+        }
+    }
+}
+.carousel{
+    .carousel-indicators{
+        // z-index: -1;
+        button{
+            background-color: rgb(164, 163, 163)!important;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1245px){
+    menu{
+        .navigation{
+            display: none;
+        }
+    }
+    .carousel{
+        .carousel-indicators{
+            margin: -50px 0px;
+        }
+        .carousel-inner{
+            padding: 0 1%;
+            margin-top: 60px;
+        }
+    }
+    
+}

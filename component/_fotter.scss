@@ -1,0 +1,121 @@
+footer{
+    background-color: black;
+    color: white;
+    margin-bottom: -20px;
+    .fotter-menu1{
+        padding: 40px 12%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        .menu1-item-box{
+            text-align: start;
+            .title{
+                list-style-type: none;
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+            .item-ul{
+                text-align: start;
+                margin-left: -33px;
+                a{
+                    li{
+                        list-style-type: none;
+                        // margin: 194px 0!important;
+                        display: inline;
+                        font-weight: light;
+                        border-bottom: black;
+                        &:hover{
+                            transition: 0.50s;
+                            border-bottom: 2px solid gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fotter-menu2{
+        padding: 0 4%;
+        padding-top: 30px;
+        display: none;
+        .menu2-item-box{
+            .info{
+                list-style-type: none;
+            }
+            .info-text{
+                // font-size: 15px!important;
+                margin-bottom: 37px;
+            }
+            .my-collapse{
+                transition: 0.40s;
+                margin-bottom: 5px !important;
+                a{
+                    li{
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+    .input-box{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 12%;
+        .input-div{
+            display: flex;
+            p{
+                width: 400px;
+            }
+            .input-group{
+                .form-control{
+                    padding: 10px!important;
+                    width: 100px !important;
+                }
+                .input-group-text{
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &:hover{
+                        background-color: gray;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .icon-div{
+            i{
+                padding: 7px;
+                font-size: 26px;
+            }
+        }
+    }
+    .last-item{
+        margin-top: 60px;
+        .item-image{
+            margin-top: 20px;
+            img{
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1260px){
+   footer{
+    .fotter-menu1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+   }
+}
+
+@media only screen and (max-width: 770px) {
+   footer{
+    .fotter-menu1{
+        display: none;
+    }
+    .fotter-menu2{
+        display: block;
+    }
+   }
+}
